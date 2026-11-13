@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>이현석 자기소개서</title>
+  <script>
+    // 저장해 둔 테마를 화면이 그려지기 전에 먼저 적용 (깜빡임 방지)
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+    } catch (e) {}
+  </script>
+  <meta name="description" content="강원대학교 전자·반도체공학부 이현석의 자기소개 페이지">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 상단 메뉴 -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">현석 <span>자기소개서</span></a>
+      <div class="nav-right">
+        <nav aria-label="구역 이동">
+          <a href="#about">소개</a>
+          <a href="#timeline">경험</a>
+          <a href="#awards">수상</a>
+          <a href="#skills">역량</a>
+        </nav>
+        <!-- 테마 변경 버튼: 밝은 화면 ↔ 어두운 화면 -->
+        <button type="button" class="theme-btn" id="themeBtn" aria-label="어두운 테마로 바꾸기">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 첫 화면 -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">commento 실무과제</p>
+        <h1>이현석</h1>
+        <p class="headline">반도체를 공부하며 바이브 코딩을 즐기는 전자공학도</p>
+        <p class="meta">강원대학교 · 전자·반도체공학부 전자공학전공 · 3학년</p>
+      </div>
+    </section>
+
+    <!-- 소개 -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="sec-head"><h2>소개</h2></div>
+        <div class="prose">
+          <p>군에서 이동통신병으로 STR·LCTR·RF 안테나를 다루며 통신망을 구성하고 운용했습니다. 전역 후에는 전공 수업과 함께 반도체 공정실습에 참여하며 진로를 구체화하고 있고, AI 캠프와 해커톤을 거치며 아이디어를 직접 코드로 만들어 보는 바이브 코딩에 재미를 붙였습니다.</p>
+          <p>토론대회에서는 생각을 정리하고 전달하는 힘을 길렀고, 교내 AI 캠프와 해커톤, AX Challenge에 나가며 AI를 활용해 아이디어를 구체적인 결과물로 만드는 실력을 키웠습니다. 강원대학교와 서울대학교 반도체공동연구소의 공정실습에서는 반도체가 만들어지는 과정을 직접 다뤄 봤고, AI 활용 반도체 아이디어 해커톤에서는 이 두 분야를 하나로 엮어 보았습니다. 앞으로는 반도체 공정에 대한 이해와 AI 활용 능력을 함께 키워, 실무의 문제를 AI로 풀어내는 엔지니어가 되는 것이 목표입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 경험 타임라인 (날짜순) -->
+    <section id="timeline" class="section">
+      <div class="wrap">
+        <div class="sec-head"><h2>경험</h2><small>2022 – 2026</small></div>
+        <div class="legend" aria-label="분류">
+          <span class="chip c-edu">교육</span>
+          <span class="chip c-contest">대회</span>
+          <span class="chip c-etc">기타</span>
+        </div>
+        <!-- 새 경험은 <li> 한 덩어리를 복사해 날짜 순서에 맞게 추가하세요. 수상한 항목은 class="won" -->
+        <ol class="timeline">
+          <li>
+            <div class="row"><span class="period">2022.04 – 2023.06</span><span class="chip c-etc">기타</span></div>
+            <h3>팀리더</h3>
+            <p class="org">한국맥도날드</p>
+            <p class="desc">매장 운영과 팀원 교육 담당</p>
+          </li>
+          <li class="won">
+            <div class="row"><span class="period">2022.10 – 2022.11</span><span class="chip c-contest">대회</span></div>
+            <h3>교내 토론대회 <span class="badge">우수상</span></h3>
+          </li>
+          <li class="won">
+            <div class="row"><span class="period">2023.09.12 – 2025.03.11</span><span class="chip c-etc">기타</span></div>
+            <h3>이동통신병 <span class="badge">훈련 표창</span></h3>
+            <p class="desc">STR·LCTR·RF 안테나로 통신망 구성·운용</p>
+          </li>
+          <li>
+            <div class="row"><span class="period">2025.12.29 – 2026.01.15</span><span class="chip c-edu">교육</span></div>
+            <h3>반도체 공정실습Ⅰ</h3>
+            <p class="org">강원대학교 강릉캠퍼스</p>
+          </li>
+          <li>
+            <div class="row"><span class="period">2026.07.22 – 07.24</span><span class="chip c-edu">교육</span></div>
+            <h3>반도체 공정실습Ⅱ</h3>
+            <p class="org">서울대학교 반도체공동연구소</p>
+          </li>
+          <li>
+            <div class="row"><span class="period">2026.08.10</span><span class="chip c-edu">교육</span></div>
+            <h3>생성형 AI 입문교육</h3>
+            <p class="org">강원대학교</p>
+          </li>
+          <li class="won">
+            <div class="row"><span class="period">2026.08.25 – 08.26</span><span class="chip c-contest">대회</span></div>
+            <h3>강원권역 학생 중심 교육혁신 AI캠프 UNI:K <span class="badge">최우수상</span></h3>
+            <p class="org">강원대학교</p>
+          </li>
+          <li class="won">
+            <div class="row"><span class="period">2026.10.19 – 10.20</span><span class="chip c-contest">대회</span></div>
+            <h3>AI 활용 반도체 아이디어 해커톤 <span class="badge">장려상</span></h3>
+            <p class="org">강원대학교</p>
+          </li>
+          <li>
+            <div class="row"><span class="period">2026.11.06 – 11.07</span><span class="chip c-contest">대회</span></div>
+            <h3>교과형 초급과정 AI AX Challenge</h3>
+            <p class="org">강원대학교</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 수상 -->
+    <section id="awards" class="section">
+      <div class="wrap">
+        <div class="sec-head"><h2>수상</h2><small>4건</small></div>
+        <ul class="awards">
+          <li class="award">
+            <p class="prize">우수상</p>
+            <h3>교내 토론대회</h3>
+            <p class="date">2022.11.24</p>
+          </li>
+          <li class="award">
+            <p class="prize">훈련 표창</p>
+            <h3>군 복무 중 통신 훈련</h3>
+            <p class="date">2024.09.25</p>
+          </li>
+          <li class="award">
+            <p class="prize">최우수상</p>
+            <h3>강원권역 학생 중심 교육혁신 AI캠프 UNI:K</h3>
+            <p class="date">2026.08</p>
+          </li>
+          <li class="award">
+            <p class="prize">장려상</p>
+            <h3>AI 활용 반도체 아이디어 해커톤</h3>
+            <p class="date">2026.10</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 직무 역량 -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <div class="sec-head"><h2>직무 역량</h2><small>프론트엔드 개발자</small></div>
+        <ul class="skills">
+          <li class="skill">
+            <h3>지속적인 웹 기술 트렌드 학습</h3>
+            <p>VOD에서 프론트엔드 개발자에게 필요한 역량으로 꼽은 부분입니다. 웹 기술은 빠르게 바뀌고, 최근에는 생성형 AI가 코딩 방식을 바꾸고 있다고 생각합니다.</p>
+          </li>
+          <li class="skill">
+            <h3>AI 활용 능력</h3>
+            <p>AI 활용 대회에 나가 아이디어를 실제 화면과 결과물로 만들어 보며, 프론트엔드 개발자가 하는 일을 조금이나마 직접 경험했습니다. 이 경험을 통해, 내가 생각하는 결과물을 만들려면 AI에게 원하는 것을 정확하게 요구하는 AI 활용 능력이 필요하다고 생각합니다.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // 테마 변경: 버튼을 누를 때마다 밝은 테마와 어두운 테마를 번갈아 적용하고 기억
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById("themeBtn");
+      var media = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function currentTheme() {
+        var set = root.getAttribute("data-theme");
+        if (set === "light" || set === "dark") return set;
+        return media.matches ? "dark" : "light";
+      }
+      function updateLabel() {
+        btn.setAttribute("aria-label", currentTheme() === "dark" ? "밝은 테마로 바꾸기" : "어두운 테마로 바꾸기");
+      }
+
+      btn.addEventListener("click", function () {
+        var next = currentTheme() === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+        updateLabel();
+      });
+      if (media.addEventListener) media.addEventListener("change", updateLabel);
+      updateLabel();
+    })();
+  </script>
+
+</body>
+</html>
